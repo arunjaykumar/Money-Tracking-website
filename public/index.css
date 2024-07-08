@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+h1,
+h2 {
+  color: #444;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-section label {
+  margin: 10px 0 5px;
+}
+
+.input-section input,
+.input-section select {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#add_btn {
+  padding: 12px 20px;
+  background: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#add_btn:hover {
+  background: #ff6347;
+}
+
+/* Table Styles */
+.expenses-list {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #ff7f50;
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tfoot td {
+  font-weight: bold;
+  background: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  form,
+  .expenses-list {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
